@@ -5,7 +5,7 @@ rand_seed = 314
 f_x = './data/xy/x_1013.pkl'
 f_y = './data/xy/y_1013.pkl'
 
-model_name = 'LSTM'  # [ 'TCN']
+model_name = 'RNN'  # [ 'TCN']
 #'RNN', 'GRU', 'LSTM'
 device = 'cuda'  # 'cpu' or 'cuda'    我在cuda_test.py里面测试过 是可用的
 input_size = 12
@@ -20,7 +20,7 @@ in_channels = 18
 batch_size = 1
 lr = 1e-3
 n_epochs = 20
-model_save_pth = './models/model_{}.pth'.format(model_name)
+model_save_pth = './models/{}_bs{}_len24.pth'.format(model_name,batch_size)
 
 
 def print_params():

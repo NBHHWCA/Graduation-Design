@@ -2,3 +2,5 @@ __pycache__
 file_whl
 models/*.pth
 test*.py
+*.pkl
+data/microsoft_urban_air_data/
